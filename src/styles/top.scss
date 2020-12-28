@@ -1,0 +1,200 @@
+.header {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    border-bottom:2px solid $menuBg;
+    color: #333;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+    height: 50px;
+    line-height: 1;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  
+  .header-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: inherit;
+    font-weight: 400;
+    flex: 1;
+  }
+ 
+  .header-userImg{
+    margin: 0 3px 0 10px;
+    padding: 2px;
+    width: 35px;
+    height:35px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border:1px solid #eee;
+  }
+  .header-button {
+    display: flex;
+    align-items: center;
+  }
+  .header-button>.header-item{
+    margin-right: 12px;
+  }
+// dark theme
+.pull-height.dark{
+  background-color:$darkbggap !important;
+  .header{
+    background-color:$darkbg;
+      .logo_subtitle{
+        color: #fff;
+      }
+  }
+  .index{
+      background-color:$darkbg;
+      .right{
+        background-color:$darkbg;
+        .filter-container{
+          background-color:$darkbggap;
+        }
+        .app-container{
+          .el-table{
+            color: #fff;
+            tr,th{
+              background-color:$darkbg;
+            }
+            tr,td,th.is-leaf{
+              border-color: $darkbggap;
+            }
+            &.el-table--border{
+              border-color: $darkbggap;
+            }
+            .el-table__empty-block{
+              background-color: $darkbg;
+              .el-table__empty-text{
+                color: #fff;
+              }
+            }
+            .el-table__row:hover>td{
+              background-color: $darkbggap;
+            }
+            .el-table__row.current-row>td{
+              background-color: rgb(
+                72, 85, 97);
+            }
+            &.el-table--striped .el-table__body tr.el-table__row--striped td{
+              background-color: $darkbggap;
+            }
+          }
+          .el-tree.filter-tree{
+            background-color: $darkbggap;
+            color: #fff;
+            &.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content{
+              background-color: $darkbg;
+            }
+            .el-tree-node .el-tree-node__content:hover{
+              background-color: $darkbg;
+            }
+          }
+          .el-card__body{
+            background-color: $darkbggap;
+            color: #fff;
+            .el-form-item__label{
+              color: #fff;
+            }
+          }
+          .el-dialog{
+            background-color: $darkbggap;
+            color: #fff;
+            .el-dialog__title,.el-form-item__label,.el-dialog__body{
+              color: #fff;
+            }
+          }
+          .el-upload-list__item:hover{
+            background-color: $darkbg;
+          }
+          .el-upload-list__item-name,.el-upload__tip,.el-upload-list__item-name [class^=el-icon],.el-upload-list__item .el-icon-close{
+            color: #fff;
+          }
+        }
+      }
+      .tags-container{
+        .tags-menu{
+          background-color: $darkbg;
+        }
+        .tags-breadcrumb{
+          color: #fff;
+        }
+        .el-breadcrumb__inner{
+          color: #fff;
+        }
+        .tags-box{
+          background-color:$darkbggap;
+          .tag-item{
+            background-color:$darkbg;
+            color: #fff !important;
+            border-color: $darkbg;
+          }
+        }
+      }
+    .el-menu-vertical-demo{
+      background-color: $darkbg;
+      .menu-wrapper{
+        background-color: $darkbg;
+        .el-menu-item{
+          color: #fff;
+        }
+        .el-submenu__title{
+          color: #fff;
+        }
+        .el-submenu{
+          > .el-submenu__title:hover{
+            background-color: $darkbg !important;
+            opacity: 0.6;
+          }
+          .el-menu-item{
+            background-color: $darkbg !important;
+            opacity: 0.9;
+            &:hover{
+              background-color: $darkbg !important;
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner-text{
+    h2{
+      color: #fff;
+    }
+  }
+}
+
+.login-body.dark{
+  background-color: $darkbggap;
+  .login-head,.login-foot span{
+    color: #fff;
+  }
+  .login-container{
+    background-color: $darkbg;
+    .login-card,.password-card{
+      background-color: $darkbggap;
+      color: #fff;
+      .el-input-group__append, .el-input-group__prepend{
+        color: #fff;
+      }
+    }
+  }
+}
+
+.app-container.main{
+  .el-table{
+    .el-button--mini.is-circle{
+      padding: 5px;
+      [class^="icon-"] {
+        font-size: 12px !important;
+      }
+    }
+  }
+}
